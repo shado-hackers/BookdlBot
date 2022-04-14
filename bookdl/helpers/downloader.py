@@ -45,7 +45,7 @@ class Downloader:
             ])
         file_path = Path.joinpath(
             temp_dir,
-            Path('[@SamfunBookdlbot] ' + sanitize(detail['title']) +
+            Path('[@OMG_info #eBOOKbot] ' + sanitize(detail['title']) +
                  f'.{detail["extension"]}'))
         if Path.is_file(file):
             Path.rename(file, file_path)
