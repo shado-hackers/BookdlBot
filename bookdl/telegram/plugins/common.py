@@ -40,9 +40,9 @@ async def start_message_handler(c: Client, m: Message):
 @Client.on_message(filters.command("help", prefixes=["/"]))
 async def help_message_handler(c: Client, m: Message):
     await m.reply_text(
-        text="Hello! I'm **BookdlBot.**\n"
-        "Original bot [SamfunBookdlBot](https://t.me/SamfunBookdlbot)\n"
-        "Source [Bookdlbot](https://github.com/Samfun75/BookdlBot)\n\n"
+        text="Hello! I'm **BookdlBot.** 📒\n"
+        "Support [OMG INFO](https://t.me/OMG_info)\n"
+        "Follow me!  [Twitter](https://mobile.twitter.com/Shado_hackers)\n\n"
         "Here are the commands you can use:\n"
         "/start : Start the bot.\n"
         "/help: Show this helpful message\n\n"
