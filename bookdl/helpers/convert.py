@@ -53,7 +53,7 @@ class Convert:
             'File': direct_links[1],
             'PdfVersion': '2.0',
             'OpenZoom': '100',
-            'PdfTitle': '@SamfunBookdlbot - ' + detail['title'],
+            'PdfTitle': '@OMG_info #eBOOKbot - ' + detail['title'],
             'RotatePage': 'ByPage'
         }
         stat_var = f"{ack_msg.chat.id}{ack_msg.message_id}"
@@ -86,7 +86,7 @@ class Convert:
 
         file_path = Path.joinpath(
             temp_dir,
-            Path('[@SamfunBookdlbot] ' + sanitize(detail['title']) + '.pdf'))
+            Path('[@OMG_info #eBOOKbot] ' + sanitize(detail['title']) + '.pdf'))
         detail[
             'cost'] = f'ConvertAPI Cost: **{Result.conversion_cost}** seconds.'
         await ack_msg.edit_text(f'About to download converted file...')
